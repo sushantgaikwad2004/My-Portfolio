@@ -295,14 +295,14 @@ body {
   
   .terminal_body {
     background: rgba(56, 4, 40, 0.9);
-    padding-top: 10px;
+    height: calc(100% - 30px);
+    padding-top: 2px;
     margin-top: -1px;
-    font-size: 14px; /* Increased font size for better visibility */
+    font-size: 12px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    height: 400px; /* Adjusted height to make it bigger */
-    overflow-y: auto; /* Added scrollbar when content exceeds height */
-}
+    height: 400px;
+  }
   /* Add CSS styles for the input field */
 .terminal_body input[type="text"] {
     background-color: transparent;
@@ -671,6 +671,69 @@ button.primary.ghost {
     text-align: right;
     margin-top: 2px;
 }
+@media screen and (max-width: 768px) {
+  .home {
+      padding: 70px 5% 0;
+  }
+
+  .home-content {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .home-content h3 {
+      font-size: 24px;
+  }
+
+  .home-content h1 {
+      font-size: 40px;
+  }
+
+  .home-content p {
+      font-size: 16px;
+  }
+
+  .home-sci a {
+      margin: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+      padding: 70px 5% 0;
+  }
+
+  .home-content {
+      max-width: 100%;
+      text-align: center;
+  }
+
+  .home-content h3 {
+      font-size: 20px;
+  }
+
+  .home-content h1 {
+      font-size: 32px;
+  }
+
+  .home-content p {
+      font-size: 14px;
+  }
+
+  .home-sci a {
+      margin: 15px 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .navbar a {
+        font-size: 14px; /* Further decrease font size for smaller screens */
+        margin-left: 15px; /* Adjust spacing between links */
+    }
+}
 .edu{
   margin: 10px 10px 0 0; /* top right bottom left */
     padding: 0; /* Ensure no padding */
@@ -679,6 +742,13 @@ button.primary.ghost {
     right: 1350;
     
 }
+
+
+/* Adjustments for even smaller screens */
+
+
+
+
 .edu-info{
  
 }
@@ -687,40 +757,9 @@ button.primary.ghost {
   
 
 }
-@media only screen and (max-width: 768px) {
-  /* Adjust styles for smaller screens */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .navbar a {
-    margin: 15px 0;
-  }
-}
 
-@media only screen and (min-width: 768px) {
-  /* Adjust styles for larger screens */
-  .header {
-    padding: 20px 10%; /* Reverted padding for larger screens */
-  }
 
-  .navbar {
-    flex-direction: row; /* Reverted flex direction for larger screens */
-    margin-top: 0; /* Reverted margin for larger screens */
-  }
-
-  .navbar a {
-    margin: 0 35px; /* Reverted margin for larger screens */
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  /* Adjust styles for larger screens */
-  .home, .card-container {
-    padding: 70px 10% 0; /* Reverted padding for larger screens */
-  }
-}
 
 
 
