@@ -15,6 +15,20 @@ const Home = () => {
     const footerSection = document.querySelector(".footer");
     footerSection.scrollIntoView({ behavior: "smooth" });
   };
+
+  const downloadResume = () => {
+    console.log("Downloading resume...");
+    // Replace 'path_to_your_resume.pdf' with the actual path to your PDF resume
+    const resumeUrl =
+      './assets\Coursera KT9X73F36YYY.pdf';
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+    link.setAttribute("download", "Sushant_Gaikwad_Resume.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <header className="header">
@@ -30,7 +44,7 @@ const Home = () => {
       <section className="home">
         <div className="home-content">
           <h3>Heloo Its Me</h3>
-          <h1>Sushan Gaikwad</h1>
+          <h1>Sushant Gaikwad</h1>
           <h3>
             And I am a Computer Computer Engineering Student
             <span className="text"></span>
@@ -58,7 +72,7 @@ const Home = () => {
               <i class="bx bx-envelope"></i>
             </a>
           </div>
-          <a href="" className="btn-box">
+          <a onClick={downloadResume} className="btn-box">
             Download My Resume
           </a>
         </div>
