@@ -734,6 +734,18 @@ button.primary.ghost {
         margin-left: 15px; /* Adjust spacing between links */
     }
 }
+@media screen and (min-width: 769px) {
+  .home {
+    background-image: url(./fotor-2024022521158.png);
+  }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+  .home {
+    background-image: url(./fott.png);
+  }
+}
 .edu{
   margin: 10px 10px 0 0; /* top right bottom left */
     padding: 0; /* Ensure no padding */
